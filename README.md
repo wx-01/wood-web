@@ -2,12 +2,6 @@
 
 ---
 
-Wood-Web/
-|
-└── frontend/      # React.js client application
-
----
-
 ## 🚀 Getting Started
 
 Follow these steps to run the project locally:
