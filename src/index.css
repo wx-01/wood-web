@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+@utility background-shadow {
+  box-shadow: 0px 0px 15px rgb(174 172 172 / 50%);
+}
