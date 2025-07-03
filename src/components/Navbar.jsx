@@ -8,9 +8,14 @@ const navItems = [
 ];
 
 const Navbar = () => {
+  const pathname = window.location.pathname;
   return (
     <nav className="fixed w-full z-40 transition-all duration-300">
-      <div className="flex items-center justify-between px-10 py-7 md:px-15 md:py-9 bg-[#1E0C06] rounded-b-3xl md:rounded-b-[50px] background-shadow ">
+      <div
+        className={`flex items-center justify-between px-10 py-7 md:px-15 md:py-9 bg-[#1E0C06] rounded-b-3xl md:rounded-b-[50px] ${
+          pathname === "/" ? "bg-transparent" : "background-shadow "
+        }`}
+      >
         <a
           className="text-xl font-bold text-primary flex items-center"
           href="/"
